@@ -30,7 +30,8 @@ public class MainPageController {
 
 
     @GetMapping("/")
-    public String mainPage() {
+    public String mainPage(Model model) {
+        model.addAttribute("page", "/");
         return "index";
     }
 }

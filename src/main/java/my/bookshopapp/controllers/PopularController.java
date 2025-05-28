@@ -5,11 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class GenresController {
+public class PopularController {
 
-    @GetMapping("/genres")
-    public String genresPage(Model model) {
-        model.addAttribute("page", "genres");
-        return "genres/genres";
+    @GetMapping("/popular")
+    public String popularPage(Model model) {
+        model.addAttribute("page", "popular");
+        return "books/popular";
     }
 }
